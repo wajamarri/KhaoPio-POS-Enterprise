@@ -1,0 +1,35 @@
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Build
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Database
+database/backups/*.sql
+
+# Prisma
+server/prisma/dev.db
+
+# Vite
+client/.vite
+
+# npm
+package-lock.json
