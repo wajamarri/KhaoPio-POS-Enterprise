@@ -1,7 +1,3 @@
-export * from "./Button";
-export * from "./Card";
-export * from "./Badge";
-export * from "./Loader";
-export * from "./EmptyState";
-export * from "./PageHeader";
-export * from "./StatCard";
+export { default as Button } from "./Button/Button";
+export { default as Card } from "./Card/Card";
+export { default as StatCard } from "./StatCard/StatCard";
