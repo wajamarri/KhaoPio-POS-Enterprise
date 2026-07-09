@@ -1,11 +1,22 @@
-import { StatCard } from "../../components/ui";
+import {
+  StatCard,
+  PageHeader,
+  Badge,
+} from "../../components/ui";
 
 export default function DashboardPage() {
   return (
     <div>
-      <h1 className="mb-8 text-3xl font-bold">
-        Welcome to KhaoPio POS Enterprise
-      </h1>
+      <PageHeader
+        title="Dashboard"
+        subtitle="Welcome back to KhaoPio POS Enterprise"
+        action={
+          <Badge
+            text="System Online"
+            color="green"
+          />
+        }
+      />
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         <StatCard
