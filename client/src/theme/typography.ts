@@ -1,11 +1,9 @@
 export const typography = {
-  h1: "36px",
-  h2: "30px",
-  h3: "24px",
+  h1: "text-4xl font-bold",
+  h2: "text-3xl font-semibold",
+  h3: "text-2xl font-semibold",
 
-  body: "16px",
+  body: "text-base",
 
-  small: "14px",
-
-  tiny: "12px",
+  caption: "text-sm text-gray-500",
 };
