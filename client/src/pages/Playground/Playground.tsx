@@ -5,80 +5,84 @@ import {
   CardFooter,
   Container,
   Stack,
+  Grid,
+  GridItem,
+  Section,
+  Divider,
 } from "@/design-system";
 
 export default function Playground() {
   return (
     <main className="min-h-screen bg-slate-100 py-16">
-      <Container size="lg">
+      <Container>
 
-        <Stack spacing="lg">
+        <Section spacing="lg">
 
-          <div className="text-center">
+          <Stack spacing="lg">
 
-            <h1 className="text-4xl font-bold text-slate-900">
-              KhaoPio Design System
-            </h1>
+            <div className="text-center">
+              <h1 className="text-4xl font-bold text-slate-900">
+                KhaoPio Design System
+              </h1>
 
-            <p className="mt-3 text-slate-500">
-              Enterprise Component Playground
-            </p>
+              <p className="mt-2 text-slate-500">
+                Enterprise Layout Components
+              </p>
+            </div>
 
-          </div>
+            <Divider />
 
-          <div className="grid gap-8 lg:grid-cols-2">
+            <Grid cols={2} gap="lg">
 
-            <Card variant="elevated" interactive>
+              <GridItem>
+                <Card variant="elevated" interactive>
+                  <CardHeader>
+                    Today's Sales
+                  </CardHeader>
 
-              <CardHeader>
-                <h2 className="text-lg font-semibold text-slate-800">
-                  Today's Sales
-                </h2>
-              </CardHeader>
+                  <CardBody>
+                    <p className="text-5xl font-bold">
+                      Rs. 24,500
+                    </p>
 
-              <CardBody>
-                <p className="text-5xl font-bold tracking-tight leading-none text-slate-900">
-                  Rs. 24,500
-                </p>
+                    <p className="mt-4 text-emerald-600 font-medium">
+                      ▲ +14%
+                    </p>
+                  </CardBody>
 
-                <p className="mt-5 text-sm font-medium text-emerald-600">
-                  ▲ +14% from yesterday
-                </p>
-              </CardBody>
+                  <CardFooter>
+                    Updated 2 minutes ago
+                  </CardFooter>
+                </Card>
+              </GridItem>
 
-              <CardFooter>
-                Updated 2 minutes ago
-              </CardFooter>
+              <GridItem>
+                <Card variant="outlined" interactive>
+                  <CardHeader>
+                    Orders Today
+                  </CardHeader>
 
-            </Card>
+                  <CardBody>
+                    <p className="text-5xl font-bold">
+                      128
+                    </p>
 
-            <Card variant="outlined" interactive>
+                    <p className="mt-4 text-sky-600 font-medium">
+                      18 Pending
+                    </p>
+                  </CardBody>
 
-              <CardHeader>
-                <h2 className="text-lg font-semibold text-slate-800">
-                  Orders Today
-                </h2>
-              </CardHeader>
+                  <CardFooter>
+                    Live Queue
+                  </CardFooter>
+                </Card>
+              </GridItem>
 
-              <CardBody>
-                <p className="text-5xl font-bold tracking-tight leading-none text-slate-900">
-                  128
-                </p>
+            </Grid>
 
-                <p className="mt-5 text-sm font-medium text-blue-600">
-                  ▲ +8 orders today
-                </p>
-              </CardBody>
+          </Stack>
 
-              <CardFooter>
-                Updated just now
-              </CardFooter>
-
-            </Card>
-
-          </div>
-
-        </Stack>
+        </Section>
 
       </Container>
     </main>
